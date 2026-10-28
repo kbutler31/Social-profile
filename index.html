@@ -1,56 +1,69 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
-
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./assets/images/favicon-32x32.png"
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Find Kaleb Butler around the web: front-end developer and lifelong learner from Arkansas."
     />
-    <link href="style.css" rel="stylesheet" />
-
-    <title>Frontend Mentor | Social links profile</title>
-
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
+    <meta name="theme-color" content="#141414" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Jessica Randell | Social Links</title>
   </head>
   <body>
+    <a class="skip-link" href="#profile">Skip to profile</a>
     <main class="container">
-      <div class="wrapper">
+      <article class="profile-card" id="profile" aria-labelledby="profile-name">
         <img
+          class="avatar"
           src="./assets/images/avatar-jessica.jpeg"
-          alt="jessica profile image"
+          alt="Sample profile portrait"
+          width="88"
+          height="88"
         />
-        <h1>Jessica Randall</h1>
-        <h2>London, United Kingdom</h2>
-        <p>"Front-end developer and avid reader."</p>
-        <ul>
-          <li><a href="#">GitHub</a></li>
-          <li><a href="#">Frontend Mentor</a></li>
-          <li><a href="#">LinkedIn</a></li>
-          <li><a href="#">Twitter</a></li>
-          <li><a href="#">Instagram</a></li>
-        </ul>
-      </div>
-    </main>
+        <h1 id="profile-name">Jessica Randell</h1>
+        <p class="location">Arkansas, United States</p>
+        <p class="bio">"Front-end developer and lifelong learner."</p>
 
-    <!-- <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
-    </div> -->
+        <nav aria-label="Social profiles">
+          <ul class="social-links">
+            <li>
+              <a href="https://github.com/jessicarandell" target="_blank" rel="noopener noreferrer">
+                GitHub
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/jessica-randell/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                LinkedIn
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.ziprecruiter.com/profile"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                ZipRecruiter
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.youtube.com/@jessicarandell"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                YouTube
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </article>
+    </main>
   </body>
 </html>
